@@ -6,12 +6,14 @@ for (var m=0; m<option.length;m++) {
        break;
        } else {
          var phrase = prompt("Ingrese su frase por favor");
-         for(var i=0; i<phrase.length;i++) {
-           if (phrase.charCodeAt(i) === " ".charCodeAt()||isNaN(phrase[i]) === false){
-             alert("No ingrese números ni espacios en blanco");
-             break}
            }
-         }
+       }
+       for(var i=0; i<phrase.length;i++) {
+           if (phrase.charCodeAt(i) === " ".charCodeAt()||isNaN(phrase[i]) === false) {
+             alert("No ingrese números ni espacios en blanco");
+             var option=null;
+             break;
+             }
        }
        //Una vez validado todo pasamos a realizar la opcion que el usuario haya escogido y lo mostramos por medio de un alert()
    if(option=== "1"){
@@ -19,7 +21,6 @@ for (var m=0; m<option.length;m++) {
     } else if(option==="2"){
         alert("Texto Original : "+phrase+"\n"+"Texto Descifrado : "+decipher(phrase));
     }
-
                                      //FUNCION PARA CIFRAR
 function cipher(phrase){
    var StrLet ="";                                  //Creamos el string vacio donde se almacenara losnuevos valores.
@@ -38,9 +39,7 @@ function cipher(phrase){
        }  
    } return StrLet;                                  //Retornamos el nuevo string con las letras enncriptadas.
 }
-
                                         //FUNCION PARA DESCIFRAR
-
 function decipher(phrase){
    var StrLet ="";                                  //Creamos el string vacio donde se almacenara losnuevos valores.
    for(i=0;i<phrase.length;i++){                    //Recorremosla frase ingresada,Si esta en el rango de MAYUSCULA.
