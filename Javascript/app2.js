@@ -5,13 +5,13 @@ var option = prompt("Elija una opciones "+"\n" + "1. Cifrar "+"\n" + "2. Decifra
 if (option !== "1" && option !== "2"){
   alert("Solo ingrese opción 1 o 2");
   option = null;
-  
+
 } else{
   var phrase = prompt("Ingrese su frase por favor");
 }
 
 for(var i = 0; i < phrase.length; i++) {
-  if (phrase.charCodeAt(i) === " ".charCodeAt() || isNaN(phrase[i]) === false){
+  if (phrase.charCodeAt(i) === " ".charCodeAt() || isNaN(phrase) === false){
     alert("No ingrese números ni espacios en blanco");
     phrase = prompt("Ingrese su frase por favor");
   }
