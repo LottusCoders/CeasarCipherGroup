@@ -9,8 +9,8 @@ Texto original: `ABCDEFGHIJKLMNOPQRSTUVWXYZ`
 Texto codificado: `HIJKLMNOPQRSTUVWXYZABCDEFG`
 ~~~
 + Creamos una variable `option` que pide por medio de un prompt que elija dos opciones:
-    1.Cifrar 2. Decifrar
-+ Por medio de un `if` validamos que el número ingresado por el usuario sea 1 y 2, en todo caso sale un `alert` donde pide que se ingrese solamente 1 o 2.
+    1.Cifrar 2. Decifrar 3. Salir
++ Por medio de un `if` validamos que el número ingresado por el usuario sea 1, 2 y 3, en todo caso sale un `alert` donde pide que se ingrese solamente 1 o 2.
 + Caso contrario, elige entre 1 o 2, el programa pedirá que ingrese una frase.
 + Mediante un `for` recorremos la frase del usuario y evaluamos que la frase no contenga espacios en blanco ni números. 
 
