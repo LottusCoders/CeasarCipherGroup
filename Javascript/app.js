@@ -60,12 +60,13 @@ for (var m=0; m<option[0].length;m++) {
     break;
     } else {
     var sentence = [prompt("Ingrese su frase por favor")];
-      for(var i=0; i<sentence[0].length;i++) {
-        if (sentence[0].charCodeAt(i) === " ".charCodeAt()||isNaN(sentence[0][i]) === false) {
-          alert("No ingrese números ni espacios en blanco");
-            break
-        }
-      }
+    }
+  for (var i=0; i<sentence[0].length;i++) {
+    if (sentence[0].charCodeAt(i) === " ".charCodeAt()||isNaN(sentence[0][i]) === false) {
+      alert("No ingrese números ni espacios en blanco");
+      option[0]= null;
+      break;
+    }
   }
 }
 //Una vez validado todo pasamos a realizar la opcion que el usuario haya escogido y lo mostramos por medio de un alert()
