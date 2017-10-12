@@ -19,10 +19,10 @@ for(var i = 0; i < phrase.length; i++) {
 //Función para Cifrar
 function cipher(phrase){
 
-  //Creamos el string vacio donde se almacenara losnuevos valores.
+  //Creamos el string vacio donde se almacenara los nuevos valores.
   var strLet ="";                                  
   
-  //Recorremosla frase ingresada,Si esta en el rango de MAYUSCULAS.
+  //Recorremos la frase ingresada,Si esta en el rango de MAYUSCULAS.
   for(i = 0; i < phrase.length; i++){                    
     
     //Obtenemos el codigo ASCII de cada letra
