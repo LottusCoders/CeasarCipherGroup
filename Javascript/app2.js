@@ -3,7 +3,7 @@ var option = prompt("Elija una opciones "+"\n" + "1. Cifrar "+"\n" + "2. Decifra
 
 //validamos que ingrese la opción correcta, si es correcta evaluamos la frase que no contenga números ni espacios
 if (option !== "1" && option !== "2"){
-  alert("Solo ingrese opción 1 o 2");
+  alert("Solo ingrese opci\u00F3n 1 o 2");
   option = null;
 
 } else{
