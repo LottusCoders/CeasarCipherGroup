@@ -15,7 +15,6 @@ for(var i = 0; i < phrase.length; i++) {
     option = null;
   }
 }
-//asdasd
       
 //Función para Cifrar
 function cipher(phrase){
