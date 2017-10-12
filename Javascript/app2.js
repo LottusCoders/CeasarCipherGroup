@@ -35,10 +35,10 @@ function cipher(phrase){
       var newAsc = (asc - 65 + 33) % 26 + 65;        
       
       //Desciframos  ese nuevo código a letra.
-      var newlet = String.fromCharCode(newAsc);
+      var newLet = String.fromCharCode(newAsc);
 
       //Almacenamos letra por letra dentro del nuevo String.  
-      strLet += newlet;                         
+      strLet += newLet;                         
     }
     //en caso contrario si es MINÚSCULA.                                           
     else if(asc >= 97 && asc <= 122) {
@@ -77,10 +77,10 @@ function decipher(phrase){
       var newAsc = (asc + 65 -33) % 26 + 65;       
 
       //Desciframos  ese nuevo código a letra. 
-      var newlet= String.fromCharCode(newAsc);  
+      var newLet= String.fromCharCode(newAsc);  
       
       //Almacenamos letra por letra dentro del nuevo String.
-      strLet += newlet;                               
+      strLet += newLet;                               
     }                              
     //en caso contrario si es MINÚSCULA.              
     else if(asc >= 97 && asc <= 122){
